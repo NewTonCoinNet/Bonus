@@ -5,16 +5,10 @@ from aiogram import Bot, Dispatcher, F, types
 from aiogram.filters import CommandStart, Command
 from aiogram.filters.command import Command 
 from aiogram.types import Message, CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
-from aiogram.client.session.aiohttp import AiohttpSession
-from dotenv import load_dotenv
 from random import choice
 
-load_dotenv()
-
-session = os.getenv('session = session')
-session = AiohttpSession(proxy='http://proxy.server:3128')
-bot = Bot(token='TOKEN', session = session, proxy="http://proxy.server:3128" )
-TOKEN = os.getenv('TOKEN')
+TOKEN = '8035596290:AAF1c1NpO33oKQvNC8kq1cDz4P8FeK6hBpo'
+bot = Bot(token='TOKEN')
 dp = Dispatcher()
 
 # Список улиц для выбора
@@ -261,4 +255,5 @@ async def main():
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
+
     asyncio.run(main())
