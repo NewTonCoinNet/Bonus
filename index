@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Gifty Mini App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div class="app">
+    <h2>Gifty | Random Gifts</h2>
+    <div class="profile">
+      <span id="username">@username</span>
+      <span id="stars">⭐ 1678</span>
+    </div>
+
+    <div class="roulette">
+      <div class="item">💝 25</div>
+      <div class="item">🧸 150</div>
+      <div class="item">🌹 100</div>
+    </div>
+
+    <button id="spin">Крутить рулетку за 100</button>
+
+    <div class="modes">
+      <button class="mode">Демо режим</button>
+      <button class="mode">Обычный режим</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

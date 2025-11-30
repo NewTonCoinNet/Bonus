@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #1e1e26;
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.app {
+  padding: 20px;
+}
+
+.roulette {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.item {
+  background: #2a2a35;
+  padding: 15px;
+  border-radius: 10px;
+  width: 70px;
+}
+
+button {
+  background: #7a4cff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #935cff;
+}
